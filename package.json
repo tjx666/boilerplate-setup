@@ -1,19 +1,19 @@
 {
-    "name": "boilerplate-setup",
+    "name": "setup-boilerplate",
     "version": "0.0.0",
-    "description": "a cli to setup boilerplate",
+    "description": "cli to setup boilerplate",
     "keywords": [
         "boilerplate",
         "cli"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/boilerplate-setup#readme",
+    "homepage": "https://github.com/setup-boilerplate#readme",
     "bugs": {
-        "url": "https://github.com/boilerplate-setup/issues"
+        "url": "https://github.com/setup-boilerplate/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/boilerplate-setup.git"
+        "url": "git+https://github.com/setup-boilerplate.git"
     },
     "author": "YuTengjing <ytj2713151713@gmail.com>",
     "files": [
@@ -52,11 +52,12 @@
         "clean": true
     },
     "scripts": {
-        "prepublishOnly": "pnpm run build",
+        "prepare": "simple-git-hooks",
         "build": "tsup-node",
         "type-check": "tsc --noEmit",
         "lint": "eslint .",
         "test": "pnpm lint && pnpm type-check",
+        "prepublishOnly": "pnpm run build",
         "release": "pnpm test && npx @yutengjing/release && pnpm publish"
     },
     "dependencies": {
