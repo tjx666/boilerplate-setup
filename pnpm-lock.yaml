@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^0.0.1
     version: 0.0.1(prettier@3.0.0)
   '@yutengjing/release':
-    specifier: ^0.0.8
-    version: 0.0.8
+    specifier: ^0.0.10
+    version: 0.0.10
   '@yutengjing/tsconfig-node':
     specifier: ^0.0.3
     version: 0.0.3(@types/node@18.16.19)
@@ -956,15 +956,15 @@ packages:
       prettier: 3.0.0
     dev: true
 
-  /@yutengjing/release@0.0.8:
-    resolution: {integrity: sha512-yhTP7dC/fGPEiFNpqfH4Sdm9Kv4Vqcv092XWiNDEZHJhvMsQEKfAK1bUd/gF6T3i5guArBEbveCo1muTbfXLrw==}
+  /@yutengjing/release@0.0.10:
+    resolution: {integrity: sha512-RAyPBiKq6YcSGV70wn3h+47Qlc2K4amGAnT/SXamIx/L7EuQyW82Eb6h1bOzeRp5j4Dj1D+yIjDxPG2nzmuaQA==}
     engines: {node: '>=16.14.0'}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.6.3
       boxen: 5.1.2
       bumpp: 9.1.1
-      changelogen: 0.5.3
+      changelogen: 0.5.4
       execa: 5.1.1
       picocolors: 1.0.0
     transitivePeerDependencies:
@@ -1171,7 +1171,7 @@ packages:
       chalk: 4.1.2
       cli-boxes: 2.2.1
       string-width: 4.2.3
-      type-fest: 0.20.2
+      type-fest: 3.12.0
       widest-line: 3.1.0
       wrap-ansi: 7.0.0
     dev: true
@@ -1340,8 +1340,8 @@ packages:
     resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
-  /changelogen@0.5.3:
-    resolution: {integrity: sha512-RjTrgJlTHhbGlMo/s73j7uSTspla3ykr0UA5zwRs/HIZvElY6qZHu3X70httgC2Du5poS2wFCS10WLfwZr7ZTQ==}
+  /changelogen@0.5.4:
+    resolution: {integrity: sha512-ady7TjLW3ZKMWzVF8MG3vJRqLVctNTGIZnO5XoFbMbcC59BVNTZXNXL8tovB+OK6DHLk4NeTHUWzdwMaKmFyUA==}
     hasBin: true
     dependencies:
       c12: 1.4.2
@@ -1357,6 +1357,7 @@ packages:
       pkg-types: 1.0.3
       scule: 1.0.0
       semver: 7.5.3
+      std-env: 3.3.3
       yaml: 2.3.1
     transitivePeerDependencies:
       - supports-color
@@ -3934,6 +3935,10 @@ packages:
 
   /spdx-license-ids@3.0.13:
     resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
+    dev: true
+
+  /std-env@3.3.3:
+    resolution: {integrity: sha512-Rz6yejtVyWnVjC1RFvNmYL10kgjC49EOghxWn0RFqlCHGFpQx+Xe7yW3I4ceK1SGrWIGMjD5Kbue8W/udkbMJg==}
     dev: true
 
   /string-argv@0.3.2:
