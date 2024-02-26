@@ -17,10 +17,11 @@
     },
     "author": "YuTengjing <ytj2713151713@gmail.com>",
     "files": [
+        "bin",
         "dist"
     ],
     "type": "module",
-    "bin": "./dist/index.js",
+    "bin": "./bin/setup-boilerplate.js",
     "engines": {
         "node": ">=16.14.0"
     },
@@ -31,6 +32,7 @@
     "eslintConfig": {
         "extends": "@yutengjing/eslint-config-typescript",
         "rules": {
+            "import/extensions": 0,
             "unicorn/no-process-exit": 0
         }
     },
