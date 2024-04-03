@@ -1,6 +1,6 @@
 {
     "name": "setup-boilerplate",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "cli to setup boilerplate",
     "keywords": [
         "boilerplate",
@@ -87,5 +87,6 @@
         "tsx": "^3.12.7",
         "type-fest": "^3.12.0",
         "typescript": "^5.1.6"
-    }
+    },
+    "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }
