@@ -34,7 +34,9 @@ export async function setup(repositoryInfo: RepositoryInfo) {
                     message: 'The name of the extension',
                     initialValue: repositoryInfo.repoName,
                     validate: (value) => {
-                        if (!/^[a-z\-]+$/.test(value)) return 'must be kebab-case';
+                        const validRegexp = /^[a-z][a-z\d]*(?:-[a-z\d]+)*$/;
+                        if (!validRegexp.test(value))
+                            return `must be kebab-case, match regexp: ${validRegexp.source}`;
                     },
                 });
             },
